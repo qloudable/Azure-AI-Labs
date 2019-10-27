@@ -156,6 +156,8 @@ Password: {{Password}}
 1. Set up sample application
 
 Open powershell and run below command to download source code and sample images:
+![Powershell App](https://github.com/qloudable/Azure-AI-Labs/blob/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
+
 ```powershell
 git clone --single-branch --branch computer-vision https://github.com/qloudable/Azure-AI-Labs-SourceCode.git
 ```
@@ -257,7 +259,7 @@ return result;
 1.  Build the project, press **Ctrl-Shift-B**, fix any errors
 
 Make sure you set up `ImageProcessor.cs` correctly. After adding all snippets it should look like:
-**todo for rajesh** completed image processor image here
+![image preprocessor](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/imageprocessorfinal.png)
 
 ## Understanding CosmosDBHelper: (optional)
 
@@ -277,7 +279,8 @@ We will implement the main processing and storage code as a command-line/console
 1.  Open the **settings.json** file
 
 1.  Add keys and urls obtained in step 2 here. 
-**todo**: add settings.json image her. 
+![settings json](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/setting.png)
+
 
 > **Note** the url for cognitive services should end with **/vision/v1.0** for the project oxford apis.  For example `https://westus2.api.cognitive.microsoft.com/vision/v1.0`.
 
