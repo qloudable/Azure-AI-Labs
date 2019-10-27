@@ -20,7 +20,7 @@
 
 
 ## Overview
-We will build a simple C# application that allows you to ingest pictures from your local drive, then invoke the [Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api) to analyze the images and obtain tags and a description.
+We will build a simple C# application that allows you to ingest pictures from local drive, then invoke the [Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api) to analyze the images and obtain tags and a description.
 
 In this lab, you will:
 - Learn about the various Cognitive Services APIs
