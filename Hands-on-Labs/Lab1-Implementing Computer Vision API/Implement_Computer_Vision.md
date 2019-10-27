@@ -39,7 +39,7 @@ In the continuation of this lab throughout the course, we'll show you how to que
 ## Pre-Requisites
 
 1. Azure Portal Credentials (User, Password, Tenant Id, Subscription Id, and Resource Group)  
-  **Note:** These details Will be provided to you while taking the lab. 
+  **Note:** These details will be provided to you while taking the lab. 
 
 3. Familiarity with Azure Portal Console: https://docs.microsoft.com/en-us/azure/azure-portal/
 
