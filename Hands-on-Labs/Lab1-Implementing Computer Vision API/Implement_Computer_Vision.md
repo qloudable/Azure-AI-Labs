@@ -156,7 +156,7 @@ Password: {{Password}}
 ## Download Source Code and Setup Enviornment
 
 **Set up sample application**: Open powershell
-![Powershell App](https://github.com/qloudable/Azure-AI-Labs/blob/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
+![Powershell App](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
 
 Run below command to download source code and sample images:
 ```powershell
@@ -193,7 +193,7 @@ You can see that we're calling for `Caption` and `Tags` from the images, as well
 
 Now let's take a step back for a minute. It isn't quite as simple as creating the "ImageInsights" class and copying over some methods/error handling from service helpers. We still have to call the API and process the images somewhere. For the purpose of this lab, we are going to walk through creating `ImageProcessor.cs`, but in future projects, feel free to add this class to your PCL and start from there (it will need modification depending what Cognitive Services you are calling and what you are processing - images, text, voice, etc.).
 
-## Creating `ImageProcessor.cs`
+## Creating Image Processor
 
 1.  Navigate to **ImageProcessor.cs** within `ProcessingLibrary`.
 
