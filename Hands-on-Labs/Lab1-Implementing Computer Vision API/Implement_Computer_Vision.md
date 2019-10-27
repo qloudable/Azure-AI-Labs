@@ -153,9 +153,10 @@ Password: {{Password}}
 
 ## **Image Processing Library** ###
 
-1. Set up sample application
-
+### Set up sample application
 Open powershell and run below command to download source code and sample images:
+![Powershell App](https://github.com/qloudable/Azure-AI-Labs/blob/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
+
 ```powershell
 git clone --single-branch --branch computer-vision https://github.com/qloudable/Azure-AI-Labs-SourceCode.git
 ```
@@ -164,7 +165,11 @@ Navigate to directory containing solution file using command:
 cd .\Azure-AI-Labs-SourceCode\Starter
 ```
 
-1.  Use command ".\Imageprocessing.sln" to open the **Imageprocessing.sln** solution
+Use below command to open the **Imageprocessing.sln** solution
+
+```
+ .\Imageprocessing.sln
+```
 
 Within your solution, you'll find the `Processing Library`. This is a [Portable Class Library (PCL)](https://docs.microsoft.com/en-us/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library), which helps in building cross-platform apps and libraries quickly and easily. It serves as a wrapper around several services. This specific PCL contains some helper classes (in the ServiceHelpers folder) for accessing the Computer Vision API and an "ImageInsights" class to encapsulate the results. Later, we'll create an image processor class that will be responsible for wrapping an image and exposing several methods and properties that act as a bridge to the Cognitive Services.
 
@@ -180,7 +185,7 @@ You can find additional service helpers for some of the other Cognitive Services
 
 **ProcessingLibrary: The "ImageInsights" class**
 
-1.  In the **ProcessingLibrary** project, navigate to the **ImageInsights.cs** file. 
+In the **ProcessingLibrary** project, navigate to the **ImageInsights.cs** file. 
 
 You can see that we're calling for `Caption` and `Tags` from the images, as well as a unique `ImageId`. "ImageInsights" pieces only the information we want together from the Computer Vision API (or from Cognitive Services, if we choose to call multiple).
 
@@ -257,7 +262,7 @@ return result;
 1.  Build the project, press **Ctrl-Shift-B**, fix any errors
 
 Make sure you set up `ImageProcessor.cs` correctly. After adding all snippets it should look like:
-**todo for rajesh** completed image processor image here
+![image preprocessor](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/imageprocessorfinal.png)
 
 ## Understanding CosmosDBHelper: (optional)
 
@@ -277,7 +282,8 @@ We will implement the main processing and storage code as a command-line/console
 1.  Open the **settings.json** file
 
 1.  Add keys and urls obtained in step 2 here. 
-**todo**: add settings.json image her. 
+![settings json](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/setting.png)
+
 
 > **Note** the url for cognitive services should end with **/vision/v1.0** for the project oxford apis.  For example `https://westus2.api.cognitive.microsoft.com/vision/v1.0`.
 
