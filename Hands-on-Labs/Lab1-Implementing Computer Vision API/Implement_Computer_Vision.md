@@ -10,6 +10,8 @@
 
 [Sign into Azure Portal and set up API keys and urls](#sign-into-azure-portal-and-set-up-api-keys-and-urls)
 
+[Download source code and setup enviornment](#download-source-code-and-setup-enviornment)
+
 [Creating ImageProcessor.cs](#creating-imageprocessorcs)
 
 [Understanding CosmosDBHelper (optional)](#understanding-cosmosdbhelper-optional)
@@ -151,9 +153,9 @@ Password: {{Password}}
 
 1.  Copy the **URI** and the **PRIMARY KEY** to your notepad
 
-## **Image Processing Library** ###
+## Download Source Code and Setup Enviornment
 
-### Set up sample application
+**Set up sample application**
 Open powershell and run below command to download source code and sample images:
 ![Powershell App](https://github.com/qloudable/Azure-AI-Labs/blob/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
 
@@ -344,5 +346,3 @@ To deepen your understanding of the architecture described here, and to involve 
 
 ***Congratulations! You have successfully completed the lab. ***
 
-## Next Steps
--   [Lab 02: Basic Filter Bot](https://ocitraining.qloudable.com/lab/dcb1b094-cc17-43a1-89ec-dc07543eb48d)
