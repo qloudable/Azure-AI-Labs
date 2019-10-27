@@ -12,9 +12,9 @@
 
 [Download source code and setup enviornment](#download-source-code-and-setup-enviornment)
 
-[Creating ImageProcessor.cs](#creating-image-processor)
+[Creating Image Processor](#creating-image-processor)
 
-[Understanding CosmosDBHelper (optional)](#understanding-cosmosdbhelper-optional)
+[Understanding CosmosDBHelper-optional](#understanding-cosmosdbhelper-optional)
 
 [Loading Images using TestCLI](#loading-images-using-testcli)
 
@@ -268,7 +268,7 @@ Make sure you set up `ImageProcessor.cs` correctly. After adding all snippets it
 
 ![image preprocessor](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/imageprocessorfinal.png)
 
-## Understanding CosmosDBHelper: (optional)
+## Understanding CosmosDBHelper-optional
 
 Cosmos DB is not a focus of this lab, but if you're interested in what's going on - here are some highlights from the code we will be using:
 
@@ -328,11 +328,11 @@ Take some time to look through the sample images (you can find them in /sample_i
 3. delete conginitive services
 4. delete azure storage account
 
-## Credits
+### Credits
 
 Labs in this series were adapted from the [Cognitive Services Tutorial](https://github.com/noodlefrenzy/CognitiveServicesTutorial) and [Learn AI Bootcamp](https://github.com/Azure/LearnAI-Bootcamp)
 
-##  Resources
+###  Resources
 -   [Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api)
 -   [Bot Framework](https://dev.botframework.com/)
 -   [Services Directory](https://azure.microsoft.com/en-us/services/cognitive-services/directory/)
