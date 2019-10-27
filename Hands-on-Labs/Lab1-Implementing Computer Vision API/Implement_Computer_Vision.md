@@ -153,7 +153,7 @@ Password: {{Password}}
 
 ## **Image Processing Library** ###
 
-1.  Set up sample application
+### Set up sample application
 Open powershell and run below command to download source code and sample images:
 ![Powershell App](https://github.com/qloudable/Azure-AI-Labs/blob/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
 
@@ -165,7 +165,7 @@ Navigate to directory containing solution file using command:
 cd .\Azure-AI-Labs-SourceCode\Starter
 ```
 
-1.  Use below command to open the **Imageprocessing.sln** solution
+Use below command to open the **Imageprocessing.sln** solution
 
 ```
  .\Imageprocessing.sln
@@ -185,7 +185,7 @@ You can find additional service helpers for some of the other Cognitive Services
 
 **ProcessingLibrary: The "ImageInsights" class**
 
-1.  In the **ProcessingLibrary** project, navigate to the **ImageInsights.cs** file. 
+In the **ProcessingLibrary** project, navigate to the **ImageInsights.cs** file. 
 
 You can see that we're calling for `Caption` and `Tags` from the images, as well as a unique `ImageId`. "ImageInsights" pieces only the information we want together from the Computer Vision API (or from Cognitive Services, if we choose to call multiple).
 
