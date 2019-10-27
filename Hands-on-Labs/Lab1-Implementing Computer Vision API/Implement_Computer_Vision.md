@@ -12,7 +12,7 @@
 
 [Creating ImageProcessor.cs](#create-vcn-and-compute-instance-and-verify-notifications)
 
-[Understanding CosmosDBHelper:(optional)](#understanding-cosmosdbhelper:-(optional))
+[Understanding CosmosDBHelper (optional)](#understanding-cosmosdbhelper-optional)
 
 [Loading Images using TestCLI](#loading-images-using-testcli)
 
@@ -37,8 +37,8 @@ In the continuation of this lab throughout the course, we'll show you how to que
 ## Pre-Requisites
 
 1. Azure Portal Credentials (User, Password, Tenant Id, Subscription Id, and Resource Group)
-  **Note:**
-  Will be provided to you after lab is launced. 
+  
+  **Note:** These details Will be provided to you while taking the lab. 
 
 3. Familiarity with Azure Portal Console: https://docs.microsoft.com/en-us/azure/azure-portal/
 
@@ -154,13 +154,16 @@ Password: {{Password}}
 
 ## **Image Processing Library** ###
 
+1.  Open below url to download code from here and extract the zip:
+
+
 1.  Open the **code/Starter/Imageprocessing.sln** solution
 
 Within your solution, under `code/Starter`, you'll find the `Processing Library`. This is a [Portable Class Library (PCL)](https://docs.microsoft.com/en-us/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library), which helps in building cross-platform apps and libraries quickly and easily. It serves as a wrapper around several services. This specific PCL contains some helper classes (in the ServiceHelpers folder) for accessing the Computer Vision API and an "ImageInsights" class to encapsulate the results. Later, we'll create an image processor class that will be responsible for wrapping an image and exposing several methods and properties that act as a bridge to the Cognitive Services.
 
 ![Processing Library PCL](https://raw.githubusercontent.com/MicrosoftLearning/AI-100-Design-Implement-Azure-AISol/master/images/ProcessingLibrary.png)
 
-After creating the image processor (in Lab 2.4), you should be able to pick up this portable class library and drop it in your other projects that involve Cognitive Services (some modification will be required depending on which Cognitive Services you want to use).
+After creating the image processor (in next section), you should be able to pick up this portable class library and drop it in your other projects that involve Cognitive Services (some modification will be required depending on which Cognitive Services you want to use).
 
 **ProcessingLibrary: Service Helpers**
 
