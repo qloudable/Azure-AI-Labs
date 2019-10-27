@@ -153,8 +153,7 @@ Password: {{Password}}
 
 ## **Image Processing Library** ###
 
-1. Set up sample application
-
+1.  Set up sample application
 Open powershell and run below command to download source code and sample images:
 ![Powershell App](https://github.com/qloudable/Azure-AI-Labs/blob/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
 
@@ -166,7 +165,11 @@ Navigate to directory containing solution file using command:
 cd .\Azure-AI-Labs-SourceCode\Starter
 ```
 
-1.  Use command ".\Imageprocessing.sln" to open the **Imageprocessing.sln** solution
+1.  Use below command to open the **Imageprocessing.sln** solution
+
+```
+ .\Imageprocessing.sln
+```
 
 Within your solution, you'll find the `Processing Library`. This is a [Portable Class Library (PCL)](https://docs.microsoft.com/en-us/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library), which helps in building cross-platform apps and libraries quickly and easily. It serves as a wrapper around several services. This specific PCL contains some helper classes (in the ServiceHelpers folder) for accessing the Computer Vision API and an "ImageInsights" class to encapsulate the results. Later, we'll create an image processor class that will be responsible for wrapping an image and exposing several methods and properties that act as a bridge to the Cognitive Services.
 
