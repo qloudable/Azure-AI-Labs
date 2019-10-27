@@ -10,7 +10,7 @@
 
 [Sign into Azure Portal and set up API keys and urls](#sign-into-azure-portal-and-set-up-api-keys-and-urls)
 
-[Creating ImageProcessor.cs](#creating-imageprocessor.cs)
+[Creating ImageProcessor.cs](#creating-imageprocessorcs)
 
 [Understanding CosmosDBHelper (optional)](#understanding-cosmosdbhelper-optional)
 
