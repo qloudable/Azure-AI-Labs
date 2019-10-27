@@ -36,8 +36,7 @@ In the continuation of this lab throughout the course, we'll show you how to que
 
 ## Pre-Requisites
 
-1. Azure Portal Credentials (User, Password, Tenant Id, Subscription Id, and Resource Group)
-  
+1. Azure Portal Credentials (User, Password, Tenant Id, Subscription Id, and Resource Group)  
   **Note:** These details Will be provided to you while taking the lab. 
 
 3. Familiarity with Azure Portal Console: https://docs.microsoft.com/en-us/azure/azure-portal/
@@ -156,26 +155,18 @@ Password: {{Password}}
 
 1. Set up sample application
 
-Open powershell and create a TestProject directory by running following command:
+Open powershell and run below command to download source code and sample images:
 ```powershell
-md TestProject
+git clone --single-branch --branch computer-vision https://github.com/qloudable/Azure-AI-Labs-SourceCode.git
 ```
-Navigate to TestProject directory using command
+Navigate to directory containing solution file using command:
 ```powershell
-cd TestProject
-```
-Clone same application source using following command:
-```powershell
-git clone source-code url
-```
-Navigate to directory containing solution using command:
-```powershell
-cd sourcecode/Starter
+cd .\Azure-AI-Labs-SourceCode\Starter
 ```
 
 1.  Use command ".\Imageprocessing.sln" to open the **Imageprocessing.sln** solution
 
-Within your solution, under `code/Starter`, you'll find the `Processing Library`. This is a [Portable Class Library (PCL)](https://docs.microsoft.com/en-us/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library), which helps in building cross-platform apps and libraries quickly and easily. It serves as a wrapper around several services. This specific PCL contains some helper classes (in the ServiceHelpers folder) for accessing the Computer Vision API and an "ImageInsights" class to encapsulate the results. Later, we'll create an image processor class that will be responsible for wrapping an image and exposing several methods and properties that act as a bridge to the Cognitive Services.
+Within your solution, you'll find the `Processing Library`. This is a [Portable Class Library (PCL)](https://docs.microsoft.com/en-us/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library), which helps in building cross-platform apps and libraries quickly and easily. It serves as a wrapper around several services. This specific PCL contains some helper classes (in the ServiceHelpers folder) for accessing the Computer Vision API and an "ImageInsights" class to encapsulate the results. Later, we'll create an image processor class that will be responsible for wrapping an image and exposing several methods and properties that act as a bridge to the Cognitive Services.
 
 ![Processing Library PCL](https://raw.githubusercontent.com/MicrosoftLearning/AI-100-Design-Implement-Azure-AISol/master/images/ProcessingLibrary.png)
 
@@ -258,13 +249,14 @@ So now we have the caption and tags that we need from the Computer Vision API, a
 
 ```csharp
 return result;
+}
 ```
 
 1.  Now that you've built `ImageProcessor.cs`, don't forget to save it!
 
 1.  Build the project, press **Ctrl-Shift-B**, fix any errors
 
-Make sure you set up `ImageProcessor.cs` correctly. After adding all snippedts it should look like:
+Make sure you set up `ImageProcessor.cs` correctly. After adding all snippets it should look like:
 **todo for rajesh** completed image processor image here
 
 ## Understanding CosmosDBHelper: (optional)
@@ -291,7 +283,7 @@ We will implement the main processing and storage code as a command-line/console
 
 1.  If you have not already done so, compile the project
 
-1.  Open a powershell terminal and navigate to the build directory for the **TestCLI** project.  It should something like **<%CodeDir%>\code\Starter\TestCLI\bin\Debug**.
+1.  Open a powershell terminal and navigate to the build directory for the **TestCLI** project.  It should something like **c:\Azure-AI-Labs-SourceCode\Starter\TestCLI\bin\Debug**.
 
 1.  Run the **TestCLI.exe**
 
@@ -309,11 +301,8 @@ Options:
 By default, it will load your settings from `settings.json` (it builds it into the `.exe`), but you can provide your own using the `-settings` flag. To load images (and their metadata from Cognitive Services) into your cloud storage, you can just tell _TestCLI_ to `-process` your image directory as follows:
 
 ```
-TestCLI.exe -process <%CodeDir%>\AI-100-Design-Implement-Azure-AISol\Lab2-Implement_Computer_Vision\sample_images
+TestCLI.exe -process c:\Azure-AI-Labs-SourceCode\sample_images
 ```
-
-> **Note** Replace the <%CodeDir%> value with the folder where you cloned the code repository.
-
 
 Once it's done processing, you can query against your Cosmos DB directly using _TestCLI_ as follows:
 
