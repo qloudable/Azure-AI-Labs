@@ -155,10 +155,10 @@ Password: {{Password}}
 
 ## Download Source Code and Setup Enviornment
 
-**Set up sample application**
-Open powershell and run below command to download source code and sample images:
+**Set up sample application**: Open powershell
 ![Powershell App](https://github.com/qloudable/Azure-AI-Labs/blob/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
 
+Run below command to download source code and sample images:
 ```powershell
 git clone --single-branch --branch computer-vision https://github.com/qloudable/Azure-AI-Labs-SourceCode.git
 ```
