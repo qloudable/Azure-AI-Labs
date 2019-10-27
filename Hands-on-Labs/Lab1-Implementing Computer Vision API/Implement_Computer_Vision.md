@@ -6,7 +6,18 @@
 
 [Pre-Requisites](#pre-requisites)
 
-[Architecture](#architecture)
+[Introduction to Cognitive Services](#introduction-to-cognitive-services)
+
+[Sign into Azure Portal and set up API keys and urls](#sign-into-azure-portal-and-set-up-api-keys-and-urls)
+
+[Creating ImageProcessor.cs](#create-vcn-and-compute-instance-and-verify-notifications)
+
+[Understanding CosmosDBHelper:(optional)](#understanding-cosmosdbhelper:-(optional))
+
+[Loading Images using TestCLI](#loading-images-using-testcli)
+
+[Delete the resources](#delete-the-resources)
+
 
 ## Overview
 We will build a simple C# application that allows you to ingest pictures from your local drive, then invoke the [Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api) to analyze the images and obtain tags and a description.
@@ -25,7 +36,9 @@ In the continuation of this lab throughout the course, we'll show you how to que
 
 ## Pre-Requisites
 
-1. Azure Portal Credentials (User, Password, Tenant Id, Subscription Id, and Resource Group)  
+1. Azure Portal Credentials (User, Password, Tenant Id, Subscription Id, and Resource Group)
+  **Note:**
+  Will be provided to you after lab is launced. 
 
 3. Familiarity with Azure Portal Console: https://docs.microsoft.com/en-us/azure/azure-portal/
 
@@ -50,8 +63,14 @@ You can browse all of the specific APIs in the [Services Directory](https://azur
 Let's talk about how we're going to call Cognitive Services in our application.
 
 ## Sign into Azure Portal and set up API keys and urls
+Use following credentials to login into Azure Portal
+Username: {{User Name}}
+Password: {{Password}}
 
-####    Cognitive Services
+**Note** Tenant Id, Subscription Id, and Resource Group can be found under Access Details. 
+
+
+#### Cognitive Services 
 
 1.  Open the [Azure Portal](https://portal.azure.com)
 
@@ -75,7 +94,7 @@ Let's talk about how we're going to call Cognitive Services in our application.
 
 1.  Copy the url and the key to your notepad
 
-####    Azure Storage Account
+#### Azure Storage Account
 
 1.  Open the [Azure Portal](https://portal.azure.com)
 
@@ -111,7 +130,7 @@ Let's talk about how we're going to call Cognitive Services in our application.
 
 1.  Click **Create**
 
-####    Cosmos DB
+#### Cosmos DB
 
 1.  Open the [Azure Portal](https://portal.azure.com)
 
@@ -226,11 +245,8 @@ return result;
 
 1.  Build the project, press **Ctrl-Shift-B**, fix any errors
 
-Want to make sure you set up `ImageProcessor.cs` correctly? You can find the full class [here](./code/Finished/ProcessingLibrary/ImageProcessor.cs).
-
-## Exploring Cosmos DB
-
-Azure Cosmos DB is Microsoft's resilient NoSQL PaaS solution and is incredibly useful for storing loosely structured data like we have with our image metadata results. There are other possible choices (Azure Table Storage, SQL Server), but Cosmos DB gives us the flexibility to evolve our schema freely (like adding data for new services), query it easily, and can be quickly integrated into Azure Search (which we'll do in a later lab).
+Make sure you set up `ImageProcessor.cs` correctly. After adding all snippedts it should look like:
+**todo for rajesh** completed image processor image here
 
 ## Understanding CosmosDBHelper: (optional)
 
