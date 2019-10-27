@@ -154,10 +154,26 @@ Password: {{Password}}
 
 ## **Image Processing Library** ###
 
-1.  Open below url to download code from here and extract the zip:
+1. Set up sample application
 
+Open powershell and create a TestProject directory by running following command:
+```powershell
+md TestProject
+```
+Navigate to TestProject directory using command
+```powershell
+cd TestProject
+```
+Clone same application source using following command:
+```powershell
+git clone source-code url
+```
+Navigate to directory containing solution using command:
+```powershell
+cd sourcecode/Starter
+```
 
-1.  Open the **code/Starter/Imageprocessing.sln** solution
+1.  Use command ".\Imageprocessing.sln" to open the **Imageprocessing.sln** solution
 
 Within your solution, under `code/Starter`, you'll find the `Processing Library`. This is a [Portable Class Library (PCL)](https://docs.microsoft.com/en-us/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library), which helps in building cross-platform apps and libraries quickly and easily. It serves as a wrapper around several services. This specific PCL contains some helper classes (in the ServiceHelpers folder) for accessing the Computer Vision API and an "ImageInsights" class to encapsulate the results. Later, we'll create an image processor class that will be responsible for wrapping an image and exposing several methods and properties that act as a bridge to the Cognitive Services.
 
@@ -268,13 +284,14 @@ We will implement the main processing and storage code as a command-line/console
 
 1.  Open the **settings.json** file
 
-1.  Add your specific environment settings from [Lab1-Technical_Requirements.md](../Lab1-Technical_Requirements/02-Technical_Requirements.md)
+1.  Add keys and urls obtained in step 2 here. 
+**todo**: add settings.json image her. 
 
 > **Note** the url for cognitive services should end with **/vision/v1.0** for the project oxford apis.  For example `https://westus2.api.cognitive.microsoft.com/vision/v1.0`.
 
 1.  If you have not already done so, compile the project
 
-1.  Open a comman prompt and navigate to the build directory for the **TestCLI** project.  It should something like **{GitHubDir}\Lab2-Implement_Computer_Vision\code\Starter\TestCLI\bin\Debug**.
+1.  Open a powershell terminal and navigate to the build directory for the **TestCLI** project.  It should something like **<%CodeDir%>\code\Starter\TestCLI\bin\Debug**.
 
 1.  Run the **TestCLI.exe**
 
@@ -292,10 +309,11 @@ Options:
 By default, it will load your settings from `settings.json` (it builds it into the `.exe`), but you can provide your own using the `-settings` flag. To load images (and their metadata from Cognitive Services) into your cloud storage, you can just tell _TestCLI_ to `-process` your image directory as follows:
 
 ```
-TestCLI.exe -process <%GitHubDir%>\AI-100-Design-Implement-Azure-AISol\Lab2-Implement_Computer_Vision\sample_images
+TestCLI.exe -process <%CodeDir%>\AI-100-Design-Implement-Azure-AISol\Lab2-Implement_Computer_Vision\sample_images
 ```
 
-> **Note** Replace the <%GitHubDir%> value with the folder where you cloned the repository.
+> **Note** Replace the <%CodeDir%> value with the folder where you cloned the code repository.
+
 
 Once it's done processing, you can query against your Cosmos DB directly using _TestCLI_ as follows:
 
