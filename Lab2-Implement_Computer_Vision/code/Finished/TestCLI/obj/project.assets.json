@@ -1,0 +1,100 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "ImageStorageLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/ImageStorageLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ImageStorageLibrary.dll": {}
+        }
+      },
+      "ProcessingLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/ProcessingLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProcessingLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ImageStorageLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ImageStorageLibrary/ImageStorageLibrary.csproj",
+      "msbuildProject": "../ImageStorageLibrary/ImageStorageLibrary.csproj"
+    },
+    "ProcessingLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ProcessingLibrary/ProcessingLibrary.csproj",
+      "msbuildProject": "../ProcessingLibrary/ProcessingLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v2.2": [
+      "ImageStorageLibrary >= 1.0.0",
+      "ProcessingLibrary >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\rajes\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\rajes\\Desktop\\CODE\\Qloudable\\AI-100-Design-Implement-Azure-AISol\\Lab2-Implement_Computer_Vision\\code\\Finished\\TestCLI\\TestCLI.csproj",
+      "projectName": "TestCLI",
+      "projectPath": "C:\\Users\\rajes\\Desktop\\CODE\\Qloudable\\AI-100-Design-Implement-Azure-AISol\\Lab2-Implement_Computer_Vision\\code\\Finished\\TestCLI\\TestCLI.csproj",
+      "packagesPath": "C:\\Users\\rajes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rajes\\Desktop\\CODE\\Qloudable\\AI-100-Design-Implement-Azure-AISol\\Lab2-Implement_Computer_Vision\\code\\Finished\\TestCLI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\rajes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.2"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "projectReferences": {
+            "C:\\Users\\rajes\\Desktop\\CODE\\Qloudable\\AI-100-Design-Implement-Azure-AISol\\Lab2-Implement_Computer_Vision\\code\\Finished\\ImageStorageLibrary\\ImageStorageLibrary.csproj": {
+              "projectPath": "C:\\Users\\rajes\\Desktop\\CODE\\Qloudable\\AI-100-Design-Implement-Azure-AISol\\Lab2-Implement_Computer_Vision\\code\\Finished\\ImageStorageLibrary\\ImageStorageLibrary.csproj"
+            },
+            "C:\\Users\\rajes\\Desktop\\CODE\\Qloudable\\AI-100-Design-Implement-Azure-AISol\\Lab2-Implement_Computer_Vision\\code\\Finished\\ProcessingLibrary\\ProcessingLibrary.csproj": {
+              "projectPath": "C:\\Users\\rajes\\Desktop\\CODE\\Qloudable\\AI-100-Design-Implement-Azure-AISol\\Lab2-Implement_Computer_Vision\\code\\Finished\\ProcessingLibrary\\ProcessingLibrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp2.2": {
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}

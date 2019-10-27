@@ -1,0 +1,16 @@
+{
+  "CognitiveServicesKeys": {
+    "Url": "https://alexcompvision.cognitiveservices.azure.com/vision/v1.0",
+    "Vision": "ea732e37c09c4356a615361cd2da34f9"
+  },
+  "AzureStorage": {
+    "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=picbotimages;AccountKey=MPkJm2iH8bTm88KlVNhjNzT3hK1CDLxgD+OdGkdB50YgbDCxY3JJphqOwG/stHMaZi61TcSoAGe5K33ogbYnWg==;EndpointSuffix=core.windows.net",
+    "BlobContainer": "images"
+  },
+  "CosmosDB": {
+    "EndpointURI": "https://demodb.documents.azure.com:443/",
+    "Key": "136zDheri41KA1pUR43oUeFD2ziRqwAqareblamkrEXRs9GtGlnCCJt1rZGloTC29XT8kSLoh0mTz4xas2GQIA==",
+    "DatabaseName": "Bots",
+    "CollectionName": "PicMetadata"
+  }
+}
