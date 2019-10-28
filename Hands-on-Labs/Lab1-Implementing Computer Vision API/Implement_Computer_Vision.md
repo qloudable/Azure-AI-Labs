@@ -10,9 +10,11 @@
 
 [Sign into Azure Portal and set up API keys and urls](#sign-into-azure-portal-and-set-up-api-keys-and-urls)
 
-[Creating ImageProcessor.cs](#creating-imageprocessorcs)
+[Download source code and setup enviornment](#download-source-code-and-setup-enviornment)
 
-[Understanding CosmosDBHelper (optional)](#understanding-cosmosdbhelper-optional)
+[Creating Image Processor](#creating-image-processor)
+
+[Understanding CosmosDBHelper-optional](#understanding-cosmosdbhelper-optional)
 
 [Loading Images using TestCLI](#loading-images-using-testcli)
 
@@ -30,14 +32,14 @@ In this lab, you will:
 **Note:** This lab is meant for an Artificial Intelligence (AI) Engineer or an AI Developer on Azure. 
 
 **Architecture:**
-<img src="https://raw.githubusercontent.com/MicrosoftLearning/AI-100-Design-Implement-Azure-AISol/master/images/AI_Immersion_Arch.png" alt="image-alt-text">
+<img src="https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/images/AI_Immersion_Arch.png" alt="image-alt-text">
 
 In the continuation of this lab throughout the course, we'll show you how to query your data, and then build a Bot Framework bot to query it. Finally, we'll extend this bot with LUIS to automatically derive intent from your queries and use those to direct your searches intelligently.
 
 ## Pre-Requisites
 
 1. Azure Portal Credentials (User, Password, Tenant Id, Subscription Id, and Resource Group)  
-  **Note:** These details Will be provided to you while taking the lab. 
+  **Note:** These details will be provided to you while taking the lab. 
 
 3. Familiarity with Azure Portal Console: https://docs.microsoft.com/en-us/azure/azure-portal/
 
@@ -151,12 +153,13 @@ Password: {{Password}}
 
 1.  Copy the **URI** and the **PRIMARY KEY** to your notepad
 
-## **Image Processing Library** ###
+## Download Source Code and Setup Enviornment
 
-### Set up sample application
-Open powershell and run below command to download source code and sample images:
-![Powershell App](https://github.com/qloudable/Azure-AI-Labs/blob/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
+**Set up sample application**: Open powershell from app menus
 
+![Powershell App](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
+
+Run below command to download source code and sample images:
 ```powershell
 git clone --single-branch --branch computer-vision https://github.com/qloudable/Azure-AI-Labs-SourceCode.git
 ```
@@ -173,7 +176,7 @@ Use below command to open the **Imageprocessing.sln** solution
 
 Within your solution, you'll find the `Processing Library`. This is a [Portable Class Library (PCL)](https://docs.microsoft.com/en-us/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library), which helps in building cross-platform apps and libraries quickly and easily. It serves as a wrapper around several services. This specific PCL contains some helper classes (in the ServiceHelpers folder) for accessing the Computer Vision API and an "ImageInsights" class to encapsulate the results. Later, we'll create an image processor class that will be responsible for wrapping an image and exposing several methods and properties that act as a bridge to the Cognitive Services.
 
-![Processing Library PCL](https://raw.githubusercontent.com/MicrosoftLearning/AI-100-Design-Implement-Azure-AISol/master/images/ProcessingLibrary.png)
+![Processing Library PCL](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/images/ProcessingLibrary.png)
 
 After creating the image processor (in next section), you should be able to pick up this portable class library and drop it in your other projects that involve Cognitive Services (some modification will be required depending on which Cognitive Services you want to use).
 
@@ -191,7 +194,7 @@ You can see that we're calling for `Caption` and `Tags` from the images, as well
 
 Now let's take a step back for a minute. It isn't quite as simple as creating the "ImageInsights" class and copying over some methods/error handling from service helpers. We still have to call the API and process the images somewhere. For the purpose of this lab, we are going to walk through creating `ImageProcessor.cs`, but in future projects, feel free to add this class to your PCL and start from there (it will need modification depending what Cognitive Services you are calling and what you are processing - images, text, voice, etc.).
 
-## Creating `ImageProcessor.cs`
+## Creating Image Processor
 
 1.  Navigate to **ImageProcessor.cs** within `ProcessingLibrary`.
 
@@ -262,9 +265,10 @@ return result;
 1.  Build the project, press **Ctrl-Shift-B**, fix any errors
 
 Make sure you set up `ImageProcessor.cs` correctly. After adding all snippets it should look like:
+
 ![image preprocessor](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/imageprocessorfinal.png)
 
-## Understanding CosmosDBHelper: (optional)
+## Understanding CosmosDBHelper-optional
 
 Cosmos DB is not a focus of this lab, but if you're interested in what's going on - here are some highlights from the code we will be using:
 
@@ -281,9 +285,9 @@ We will implement the main processing and storage code as a command-line/console
 
 1.  Open the **settings.json** file
 
-1.  Add keys and urls obtained in step 2 here. 
-![settings json](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/setting.png)
+1.  Add keys and urls obtained in step 2 here:
 
+![settings json](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/setting.png)
 
 > **Note** the url for cognitive services should end with **/vision/v1.0** for the project oxford apis.  For example `https://westus2.api.cognitive.microsoft.com/vision/v1.0`.
 
@@ -324,11 +328,11 @@ Take some time to look through the sample images (you can find them in /sample_i
 3. delete conginitive services
 4. delete azure storage account
 
-## Credits
+### Credits
 
 Labs in this series were adapted from the [Cognitive Services Tutorial](https://github.com/noodlefrenzy/CognitiveServicesTutorial) and [Learn AI Bootcamp](https://github.com/Azure/LearnAI-Bootcamp)
 
-##  Resources
+###  Resources
 -   [Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api)
 -   [Bot Framework](https://dev.botframework.com/)
 -   [Services Directory](https://azure.microsoft.com/en-us/services/cognitive-services/directory/)
@@ -344,5 +348,3 @@ To deepen your understanding of the architecture described here, and to involve 
 
 ***Congratulations! You have successfully completed the lab. ***
 
-## Next Steps
--   [Lab 02: Basic Filter Bot](https://ocitraining.qloudable.com/lab/dcb1b094-cc17-43a1-89ec-dc07543eb48d)
