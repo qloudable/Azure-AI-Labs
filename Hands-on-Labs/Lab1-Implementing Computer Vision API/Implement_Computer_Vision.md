@@ -32,7 +32,7 @@ In this lab, you will:
 **Note:** This lab is meant for an Artificial Intelligence (AI) Engineer or an AI Developer on Azure. 
 
 **Architecture:**
-<img src="https://raw.githubusercontent.com/MicrosoftLearning/AI-100-Design-Implement-Azure-AISol/master/images/AI_Immersion_Arch.png" alt="image-alt-text">
+<img src="https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/images/AI_Immersion_Arch.png" alt="image-alt-text">
 
 In the continuation of this lab throughout the course, we'll show you how to query your data, and then build a Bot Framework bot to query it. Finally, we'll extend this bot with LUIS to automatically derive intent from your queries and use those to direct your searches intelligently.
 
@@ -176,7 +176,7 @@ Use below command to open the **Imageprocessing.sln** solution
 
 Within your solution, you'll find the `Processing Library`. This is a [Portable Class Library (PCL)](https://docs.microsoft.com/en-us/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library), which helps in building cross-platform apps and libraries quickly and easily. It serves as a wrapper around several services. This specific PCL contains some helper classes (in the ServiceHelpers folder) for accessing the Computer Vision API and an "ImageInsights" class to encapsulate the results. Later, we'll create an image processor class that will be responsible for wrapping an image and exposing several methods and properties that act as a bridge to the Cognitive Services.
 
-![Processing Library PCL](https://raw.githubusercontent.com/MicrosoftLearning/AI-100-Design-Implement-Azure-AISol/master/images/ProcessingLibrary.png)
+![Processing Library PCL](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/images/ProcessingLibrary.png)
 
 After creating the image processor (in next section), you should be able to pick up this portable class library and drop it in your other projects that involve Cognitive Services (some modification will be required depending on which Cognitive Services you want to use).
 
