@@ -83,13 +83,18 @@ Password: {{Password}}
 
 1.  Select your Azure AD and Subscription tied to your QnA Maker resource, then select your newly created QnA Maker resource
 
-1.  For the name, type **Microsoft FAQs***
+1.  For the name, type **Microsoft FAQs**
 
-1.  For the file, click **Add file**, browse to the **code/surface-pro-4-user-guide-EN.pdf** file
+1.  For the URL, enter below url and click **Add URL**
 
-1.  For the file, click **Add file**, browse to the **code/Manage Azure Blob Storage** file
+```
+```
 
-> **Note** You can find out more about the supported file types and data sources [here](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/data-sources-supported)
+1.  For the URL, enter below url and click **Add URL**
+```
+```
+
+> **Note** You can find out more about the supported file types and data sources [here](https://docs.microsoft.com/en-us/azure/cognitive-services/QnAMaker/concepts/data-sources-supported)
 
 1.  For the **Chit-chat**, select **Witty**
 
@@ -139,10 +144,12 @@ cd c:\downalods
 
 1.  Unzip the downloaded file using following command
 ```powershell
-Expand-Archive -LiteralPath C:\Archives\Invoices.Zip -DestinationPath C:\ InvoicesUnzipped
+Expand-Archive -LiteralPath {downloaded-file}.Zip -DestinationPath {downloaded-file}
 ```
 
-1.  Navigate to QnABot.sln file using powershell then run below command to open solution in visual studio
+1.  Navigate to QnABot.sln file uder {downloaded-file}  using cd command in powershell
+
+1. Run below command to open solution in visual studio
 ```
 .\QnABot.sln
 ```
