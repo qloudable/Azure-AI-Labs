@@ -148,7 +148,9 @@ cd c:\downalods
 
 1.  Unzip the downloaded file using following command
 ```powershell
+
 Expand-Archive -LiteralPath {downloaded-file}.Zip -DestinationPath {downloaded-file}
+
 ```
 
 1.  Navigate to QnABot.sln file uder {downloaded-file}  using cd command in powershell
@@ -194,6 +196,8 @@ To connect locally running bot, open Bot Framework Emulator from App Menu
 then click on Open Bot button on welcome screen and enter bot url, App Id, and Password
 
 **Note**: App Id & Password you can find in appsettings.json in the solution (See below picture for reference). URL would be formed using hostname noted before and it should look like "https://localhost:3978/api/messages"
+
+![Setting](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab4-Implement%20QnA%20Maker/media/settings.png)
  
 As you can see, it is very simple to add a generated QnA Maker to your own bots with just a few lines of code.
 
