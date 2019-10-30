@@ -12,9 +12,7 @@
 
 [Publish and Test your Knowledge base](#publish-and-test-your-knowledge-base)
 
-[Understanding CosmosDBHelper (optional)](#understanding-cosmosdbhelper-optional)
-
-[Loading Images using TestCLI](#loading-images-using-testcli)
+[Download the Bot Source code-optional)](#download-the-bot-source-code-optional)
 
 [Delete the resources](#delete-the-resources)
 
@@ -104,7 +102,7 @@ Password: {{Password}}
 1.  In the top menu, click **PUBLISH**.  
 
 1.  On the publish page, click **Publish**.  Once the service is published, click the **Create Bot** button on the success page
-![Powershell App](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
+![Success Page](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab4-Implement%20QnA%20Maker/media/successpage.png)
 
 1.  If prompted, login as the account tied to your lab resource group.
 
@@ -113,7 +111,7 @@ Password: {{Password}}
 > **Note**  Recent change in Azure requires dashes ("-") be removed from some resource names
 
 1.  Once the bot resource is created, navigate to the new **Web App Bot**, then click **Test in Web Chat**
-![Powershell App](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab1-Implementing%20Computer%20Vision%20API/media/powershellmenu.png)
+![Powershell App](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab4-Implement%20QnA%20Maker/media/success2.png)
 
 1.  Ask the bot any questions related to a Surface Pro 4 or managing Azure Blog Storage:
 
@@ -184,9 +182,6 @@ Open Bot Framework Emulator from App Menu, connect to local bot by entering bot 
  
 As you can see, it is very simple to add a generated QnA Maker to your own bots with just a few lines of code.
 
-#### Going Further
-
-What would you do to integrate the QnAMaker code into your picture bot?
 
 ####  Resources
 
@@ -194,6 +189,5 @@ What would you do to integrate the QnAMaker code into your picture bot?
 
 ## Delete the resources
 1. Switch to Azure Portal window
-2. Delete cosnomos db
-3. delete conginitive services
-4. delete azure storage account
+2. Delete all resources
+
