@@ -88,10 +88,14 @@ Password: {{Password}}
 1.  For the URL, enter below url and click **Add URL**
 
 ```
+https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab4-Implement%20QnA%20Maker/media/Manage%20Azure%20Blob%20Storage.docx
+
 ```
 
 1.  For the URL, enter below url and click **Add URL**
 ```
+https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab4-Implement%20QnA%20Maker/media/surface-pro-4-user-guide-EN.pdf
+
 ```
 
 > **Note** You can find out more about the supported file types and data sources [here](https://docs.microsoft.com/en-us/azure/cognitive-services/QnAMaker/concepts/data-sources-supported)
@@ -152,6 +156,7 @@ Expand-Archive -LiteralPath {downloaded-file}.Zip -DestinationPath {downloaded-f
 1. Run below command to open solution in visual studio
 ```
 .\QnABot.sln
+
 ```
 
 1.  Open the **Startup.cs** file, you will notice nothing special has been added here
@@ -182,10 +187,13 @@ else
     await turnContext.SendActivityAsync(MessageFactory.Text("No QnA Maker answers were found."), cancellationToken);
 }
 ```
+Run the bot locally by clicking on IIS Express option in toolbar of visual studio and note down the hostname.
 
+To connect locally running bot, open Bot Framework Emulator from App Menu
 
+then click on Open Bot button on welcome screen and enter bot url, App Id, and Password
 
-Open Bot Framework Emulator from App Menu, connect to local bot by entering bot url, App Id, and Password, which you can find in appsettings.json in the solution. 
+**Note**: App Id & Password you can find in appsettings.json in the solution (See below picture for reference). URL would be formed using hostname noted before and it should look like "https://localhost:3978/api/messages"
  
 As you can see, it is very simple to add a generated QnA Maker to your own bots with just a few lines of code.
 
@@ -195,6 +203,5 @@ As you can see, it is very simple to add a generated QnA Maker to your own bots 
 -   [What is the QnA Maker service?](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/overview/overview)
 
 ## Delete the resources
-1. Switch to Azure Portal window
+1. Switch to Azure Portal window and goto resource group
 2. Delete all resources
-
