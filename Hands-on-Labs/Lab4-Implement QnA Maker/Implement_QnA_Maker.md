@@ -93,12 +93,13 @@ https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/L
 ```
 
 1.  For the URL, enter below url and click **Add URL**
+
 ```
 https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab4-Implement%20QnA%20Maker/media/surface-pro-4-user-guide-EN.pdf
 
 ```
 
-> **Note** You can find out more about the supported file types and data sources [here](https://docs.microsoft.com/en-us/azure/cognitive-services/QnAMaker/concepts/data-sources-supported)
+**Note** You can find out more about the supported file types and data sources [here](https://docs.microsoft.com/en-us/azure/cognitive-services/QnAMaker/concepts/data-sources-supported)
 
 1.  For the **Chit-chat**, select **Witty**
 
