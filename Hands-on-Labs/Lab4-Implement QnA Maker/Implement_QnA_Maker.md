@@ -118,7 +118,7 @@ https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/L
 
 1.  On the bot service creation page, fix any naming errors, then click **Create**.
 
-> **Note**  Recent change in Azure requires dashes ("-") be removed from some resource names
+**Note**  Recent change in Azure requires dashes ("-") be removed from some resource names
 
 1.  Once the bot resource is created, navigate to the new **Web App Bot**, then click **Test in Web Chat**
 ![Powershell App](https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/Lab4-Implement%20QnA%20Maker/media/success2.png)
@@ -143,11 +143,14 @@ https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/Hands-on-Labs/L
 1.  Azure will build your source code, when complete, click **Download Bot source code**, if prompted, select **Yes**
 
 1.  Open powershell from app menu and go to Download folder using command:
+
 ```
 cd c:\downalods
+
 ```
 
 1.  Unzip the downloaded file using following command
+
 ```powershell
 
 Expand-Archive -LiteralPath {downloaded-file}.Zip -DestinationPath {downloaded-file}
@@ -157,6 +160,7 @@ Expand-Archive -LiteralPath {downloaded-file}.Zip -DestinationPath {downloaded-f
 1.  Navigate to QnABot.sln file uder {downloaded-file}  using cd command in powershell
 
 1. Run below command to open solution in visual studio
+
 ```
 .\QnABot.sln
 
