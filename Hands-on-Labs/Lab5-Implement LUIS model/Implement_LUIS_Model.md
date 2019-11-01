@@ -346,3 +346,6 @@ To deepen your understanding of the architecture described here, and to involve 
 
 ## Next Steps
 -   [Lab 02: Basic Filter Bot](https://ocitraining.qloudable.com/lab/dcb1b094-cc17-43a1-89ec-dc07543eb48d)
+
+
+***Congratulations! You have successfully completed the lab. ***

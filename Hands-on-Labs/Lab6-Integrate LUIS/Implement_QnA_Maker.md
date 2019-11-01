@@ -1,4 +1,5 @@
- 
+# Implement Computer Vision
+  
 ## Table of Contents
 
 [Overview](#overview)
@@ -28,10 +29,14 @@ In the continuation of this lab throughout the course, we'll show you how to que
 
 ## Pre-Requisites
 
-This lab is meant for an Artificial Intelligence (AI) Engineer or an AI Developer on Azure. To ensure you have time to work through the exercises, there are certain requirements to meet before starting the labs for this course.
+1. Azure Portal Credentials (User, Password, Tenant Id, Subscription Id, and Resource Group)  
+  **Note:** These details Will be provided to you while taking the lab. 
 
-You should ideally have some previous exposure to Visual Studio. We will be using it for everything we are building in the labs, so you should be familiar with [how to use it](https://docs.microsoft.com/en-us/visualstudio/ide/visual-studio-ide) to create applications. Additionally, this is not a class where we teach code or development. We assume you have some familiarity with C# (intermediate level - you can learn [here](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949) and [here](https://docs.microsoft.com/en-us/dotnet/csharp/quick-starts/)), but you do not know how to implement solutions with Cognitive Services.
+3. Familiarity with Azure Portal Console: https://docs.microsoft.com/en-us/azure/azure-portal/
 
+3. Exposure to Visual Studio: https://docs.microsoft.com/en-us/visualstudio/get-started/visual-studio-ide?view=vs-2019
+
+4. Familiarity with C# (intermediate level): https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/
 
 ##  QnA Maker Setup
 Use following credentials to login into Azure Portal

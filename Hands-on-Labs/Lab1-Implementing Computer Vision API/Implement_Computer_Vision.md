@@ -1,5 +1,3 @@
-# Implement Computer Vision
-  
 ## Table of Contents
 
 [Overview](#overview)
@@ -36,16 +34,49 @@ In this lab, you will:
 
 In the continuation of this lab throughout the course, we'll show you how to query your data, and then build a Bot Framework bot to query it. Finally, we'll extend this bot with LUIS to automatically derive intent from your queries and use those to direct your searches intelligently.
 
+**Some Key points;**
+
+**We recommend using Chrome or Edge as the broswer. Also set your browser zoom to 80%**
+
+
+- All screen shots are examples ONLY. Screen shots can be enlarged by Clicking on them
+
+- Do NOT use resource name and other data from screen shots. Only use information provided in the content section of the lab
+
+- Mac OS Users should use ctrl+C / ctrl+V to copy and paste inside the Azure Console
+
+- Login credentials are provided later in the guide (scroll down). Every User MUST keep these credentials handy.
+
+**Tenant Id**
+**Subscripiton Id**
+**Resource Group**
+**User Name**
+**Password**
+
+This lab is part of course "Design & Implement Azure AI Solution". We recommend you to take the labs in following order: 
+
+Lab1 - Implement Computer Vision API 
+
+Lab2 - Create An Intelligent Chat Bot 
+
+Lab3 - Log Chat Bot Conversations 
+
+Lab4 - Implement QnA Maker
+
+Lab5 - Implement LUIS Model 
+
+Lab6 - Integrate LUIS with Chat Bot 
+
+Lab7 - Detect User Language  
+
+Lab8 - Test Bots In DirectLine
+
 ## Pre-Requisites
 
-1. Azure Portal Credentials (User, Password, Tenant Id, Subscription Id, and Resource Group)  
-  **Note:** These details will be provided to you while taking the lab. 
+This lab is meant for an Artificial Intelligence (AI) Engineer or an AI Developer on Azure. To ensure you have time to work through the exercises, there are certain requirements to meet before starting the labs for this course.
 
-3. Familiarity with Azure Portal Console: https://docs.microsoft.com/en-us/azure/azure-portal/
+You should ideally have some previous exposure to Visual Studio. We will be using it for everything we are building in the labs, so you should be familiar with [how to use it](https://docs.microsoft.com/en-us/visualstudio/ide/visual-studio-ide) to create applications. Additionally, this is not a class where we teach code or development. We assume you have some familiarity with C# (intermediate level - you can learn [here](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949) and [here](https://docs.microsoft.com/en-us/dotnet/csharp/quick-starts/)), but you do not know how to implement solutions with Cognitive Services.
 
-3. Exposure to Visual Studio: https://docs.microsoft.com/en-us/visualstudio/get-started/visual-studio-ide?view=vs-2019
-
-4. Familiarity with C# (intermediate level): https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/
 
 ## Introduction to Cognitive Services
 
