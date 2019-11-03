@@ -13,7 +13,7 @@
 [Logging utterances to a file](#logging-utterances-to-a-file)
 
 ## Overview
-This workshop demonstrates how you can perform logging using Microsoft Bot Framework and store aspects of chat conversations. After completing these labs, you should be able to:
+This lab demonstrates how you can perform logging using Microsoft Bot Framework and store aspects of chat conversations. After completing these labs, you should be able to:
 
 - Understand how to intercept and log message activities between bots and users
 - Log utterances to file storage
