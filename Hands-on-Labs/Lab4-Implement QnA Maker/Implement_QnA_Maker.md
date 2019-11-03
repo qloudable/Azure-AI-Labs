@@ -22,7 +22,7 @@ In this lab we will explore the QnA Maker for creating bots that connect to a pr
 **Note:** This lab is meant for an Artificial Intelligence (AI) Engineer or an AI Developer on Azure. 
 
 **Architecture:**
-<img src="https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/images/AI_Immersion_Arch.png" alt="image-alt-text">
+<img src="https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/images/AI_Immersion_Arch.png" alt="image-alt-text" width="100%">
 
 In the continuation of this lab throughout the course, we'll show you how to query your data, and then build a Bot Framework bot to query it. Finally, we'll extend this bot with LUIS to automatically derive intent from your queries and use those to direct your searches intelligently.
 
