@@ -32,6 +32,15 @@ Be mindful of the following AI Ethics principles when designing and implementing
 1. *Transparency*: Guard against bias and destruction of human dignity
 1. *Ethical Application*: AI must assist humanity and be designed for intelligent privacy
 
+We encourage you to [read more](https://ai-ethics.azurewebsites.net/) about the Ethical considerations when building intelligent apps.
+
+**Note:** This lab is meant for an Artificial Intelligence (AI) Engineer or an AI Developer on Azure. 
+
+**Architecture:**
+<img src="https://raw.githubusercontent.com/qloudable/Azure-AI-Labs/master/images/AI_Immersion_Arch.png" alt="image-alt-text">
+
+In the continuation of this lab throughout the course, we'll show you how to query your data, and then build a Bot Framework bot to query it. Finally, we'll extend this bot with LUIS to automatically derive intent from your queries and use those to direct your searches intelligently.
+
 **Some Key points;**
 
 **We recommend using Chrome or Edge as the broswer. Also set your browser zoom to 80%**
@@ -51,8 +60,23 @@ Be mindful of the following AI Ethics principles when designing and implementing
 **User Name**
 **Password**
 
+This lab is part of course "Design & Implement Azure AI Solution". We recommend you to take the labs in following order: 
 
-We encourage you to [read more](https://ai-ethics.azurewebsites.net/) about the Ethical considerations when building intelligent apps.
+- [Lab1 - Implement Computer Vision API](/lab/3f89185f-0da6-4f68-b66b-19daaba28141)
+
+- [Lab2 - Create An Intelligent Chat Bot](/lab/9ed93b70-1fe5-47a3-835a-82fa346fd429)
+
+- [Lab3 - Log Chat Bot Conversations](/lab/69e9e2ab-055d-48f6-a1f9-bd24244309a2)
+
+- [Lab4 - Implement QnA Maker](/lab/35a6c467-5a2c-4736-8c63-f2aabf2d13df)
+
+- [Lab5 - Implement LUIS Model](/lab/99f1db25-5698-48ea-9cf6-a8d0dbca4fbb)
+
+- [Lab6 - Integrate LUIS with Chat Bot](/lab/916fbac5-930c-4276-9829-1082d9b7043e)
+
+- [Lab7 - Detect User Language in Chat Bot](/lab/dbeefcdd-ecd9-4f3e-b8a5-9fdfc0b0b3c9)
+
+- [Lab8 - Test Bots In DirectLine](/lab/2f7669b0-6be6-451a-a05f-c9f14d869388)
 
 ## Pre-requisities
 
@@ -934,11 +958,14 @@ public async Task<DialogTurnResult> MainMenuAsync(WaterfallStepContext stepConte
 
 >Get stuck or broken? You can find the solution for the lab up until this point under [resources/code/Finished](./code/Finished). The readme file within the solution (once you open it) will tell you what keys you need to add in order to run the solution. We recommend using this as a reference, not as a solution to run, but if you choose to run it, be sure to add the necessary keys for your enviroment.
 
-####  Resources
+#### Resources
 
 -   [Bot Builder Basics](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0&tabs=cs)
 -   [.NET Bot Builder SDK tutorial](https://docs.microsoft.com/en-us/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0)
 -   [Bot Service Documentation](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
 -   [Deploy your bot](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-deploy-az-cli?view=azure-bot-service-4.0&tabs=newrg)
+
+#### Next Steps
+-  [Lab3 - Log Chat Bot Conversations](/lab/69e9e2ab-055d-48f6-a1f9-bd24244309a2)
 
 ***Congratulations! You have successfully completed the lab. ***

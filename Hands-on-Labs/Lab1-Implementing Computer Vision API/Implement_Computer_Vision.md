@@ -55,21 +55,21 @@ In the continuation of this lab throughout the course, we'll show you how to que
 
 This lab is part of course "Design & Implement Azure AI Solution". We recommend you to take the labs in following order: 
 
-Lab1 - Implement Computer Vision API 
+- [Lab1 - Implement Computer Vision API](/lab/3f89185f-0da6-4f68-b66b-19daaba28141)
 
-Lab2 - Create An Intelligent Chat Bot 
+- [Lab2 - Create An Intelligent Chat Bot](/lab/9ed93b70-1fe5-47a3-835a-82fa346fd429)
 
-Lab3 - Log Chat Bot Conversations 
+- [Lab3 - Log Chat Bot Conversations](/lab/69e9e2ab-055d-48f6-a1f9-bd24244309a2)
 
-Lab4 - Implement QnA Maker
+- [Lab4 - Implement QnA Maker](/lab/35a6c467-5a2c-4736-8c63-f2aabf2d13df)
 
-Lab5 - Implement LUIS Model 
+- [Lab5 - Implement LUIS Model](/lab/99f1db25-5698-48ea-9cf6-a8d0dbca4fbb)
 
-Lab6 - Integrate LUIS with Chat Bot 
+- [Lab6 - Integrate LUIS with Chat Bot](/lab/916fbac5-930c-4276-9829-1082d9b7043e)
 
-Lab7 - Detect User Language  
+- [Lab7 - Detect User Language in Chat Bot](/lab/dbeefcdd-ecd9-4f3e-b8a5-9fdfc0b0b3c9)
 
-Lab8 - Test Bots In DirectLine
+- [Lab8 - Test Bots In DirectLine](/lab/2f7669b0-6be6-451a-a05f-c9f14d869388)
 
 ## Pre-Requisites
 
@@ -359,11 +359,11 @@ Take some time to look through the sample images (you can find them in /sample_i
 3. delete conginitive services
 4. delete azure storage account
 
-### Credits
+#### Credits
 
 Labs in this series were adapted from the [Cognitive Services Tutorial](https://github.com/noodlefrenzy/CognitiveServicesTutorial) and [Learn AI Bootcamp](https://github.com/Azure/LearnAI-Bootcamp)
 
-###  Resources
+#### Resources
 -   [Computer Vision API](https://www.microsoft.com/cognitive-services/en-us/computer-vision-api)
 -   [Bot Framework](https://dev.botframework.com/)
 -   [Services Directory](https://azure.microsoft.com/en-us/services/cognitive-services/directory/)
@@ -376,6 +376,9 @@ To deepen your understanding of the architecture described here, and to involve 
 - [Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/) - Data Engineer
 - [Azure Search](https://azure.microsoft.com/en-us/services/search/) - Search Engineer
 - [Bot Developer Portal](http://dev.botframework.com) - AI Engineer
+
+#### Next Steps
+-  [Lab2 - Create An Intelligent Chat Bot](/lab/9ed93b70-1fe5-47a3-835a-82fa346fd429)
 
 ***Congratulations! You have successfully completed the lab. ***
 

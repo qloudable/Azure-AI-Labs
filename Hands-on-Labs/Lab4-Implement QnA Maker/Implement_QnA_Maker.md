@@ -26,6 +26,43 @@ In this lab we will explore the QnA Maker for creating bots that connect to a pr
 
 In the continuation of this lab throughout the course, we'll show you how to query your data, and then build a Bot Framework bot to query it. Finally, we'll extend this bot with LUIS to automatically derive intent from your queries and use those to direct your searches intelligently.
 
+**Some Key points;**
+
+**We recommend using Chrome or Edge as the broswer. Also set your browser zoom to 80%**
+
+
+- All screen shots are examples ONLY. Screen shots can be enlarged by Clicking on them
+
+- Do NOT use resource name and other data from screen shots. Only use information provided in the content section of the lab
+
+- Mac OS Users should use ctrl+C / ctrl+V to copy and paste inside the Azure Console
+
+- Login credentials are provided later in the guide (scroll down). Every User MUST keep these credentials handy.
+
+**Tenant Id**
+**Subscripiton Id**
+**Resource Group**
+**User Name**
+**Password**
+
+This lab is part of course "Design & Implement Azure AI Solution". We recommend you to take the labs in following order: 
+
+- [Lab1 - Implement Computer Vision API](/lab/3f89185f-0da6-4f68-b66b-19daaba28141)
+
+- [Lab2 - Create An Intelligent Chat Bot](/lab/9ed93b70-1fe5-47a3-835a-82fa346fd429)
+
+- [Lab3 - Log Chat Bot Conversations](/lab/69e9e2ab-055d-48f6-a1f9-bd24244309a2)
+
+- [Lab4 - Implement QnA Maker](/lab/35a6c467-5a2c-4736-8c63-f2aabf2d13df)
+
+- [Lab5 - Implement LUIS Model](/lab/99f1db25-5698-48ea-9cf6-a8d0dbca4fbb)
+
+- [Lab6 - Integrate LUIS with Chat Bot](/lab/916fbac5-930c-4276-9829-1082d9b7043e)
+
+- [Lab7 - Detect User Language in Chat Bot](/lab/dbeefcdd-ecd9-4f3e-b8a5-9fdfc0b0b3c9)
+
+- [Lab8 - Test Bots In DirectLine](/lab/2f7669b0-6be6-451a-a05f-c9f14d869388)
+
 ## Pre-Requisites
 
 This lab is meant for an Artificial Intelligence (AI) Engineer or an AI Developer on Azure. To ensure you have time to work through the exercises, there are certain requirements to meet before starting the labs for this course.
@@ -209,5 +246,8 @@ As you can see, it is very simple to add a generated QnA Maker to your own bots 
 ## Delete the resources
 1. Switch to Azure Portal window and goto resource group
 2. Delete all resources
+
+#### Next Steps
+-   [Lab5 - Implement LUIS Model](/lab/99f1db25-5698-48ea-9cf6-a8d0dbca4fbb)
 
 ***Congratulations! You have successfully completed the lab. ***
